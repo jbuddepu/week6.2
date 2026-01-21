@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Multiplication Table</h3>
+<input id="num">
+<button onclick="showTable()">generate Table</button>
+<p id="output"></p>
+<script>
+function showTable(){
+    var n=document.getElementById("num").value;
+    var text="multiplication Table for "+n+":<br><br>";
+    for (var i=1;i<=10;i++){
+        text +=n+" x "+i+" = "+(n * i)+"<br>";
+    }
+    document.getElementById("output").innerHTML = text;
+}
+</script>
+</body>
+</html>
